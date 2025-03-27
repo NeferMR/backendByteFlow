@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "dm3qj2s+oNQ=",
+  "success": true,
+  "projectFilePath": "D:\\Works\\ByteFlowChallenge\\backend\\AseguradosAPI\\AseguradosAPI.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Nefer\\.nuget\\packages\\microsoft.aspnetcore.openapi\\9.0.3\\microsoft.aspnetcore.openapi.9.0.3.nupkg.sha512",
+    "C:\\Users\\Nefer\\.nuget\\packages\\microsoft.openapi\\1.6.17\\microsoft.openapi.1.6.17.nupkg.sha512"
+  ],
+  "logs": []
+}
