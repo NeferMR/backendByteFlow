@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "PWA7HatS+STwqcIwykxeYGk48ItjGm0Z4NbkYmgTvTA=",
+  "Source": "AseguradosAPI",
+  "BasePath": "_content/AseguradosAPI",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}
