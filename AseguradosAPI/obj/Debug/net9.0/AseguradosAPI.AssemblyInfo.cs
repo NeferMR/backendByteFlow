@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("AseguradosAPI")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3b05a7c98e8ef46168e7dd861f51ead16606e47c")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+aa36100c7511e686868b7d46eae766eb589f5b4c")]
 [assembly: System.Reflection.AssemblyProductAttribute("AseguradosAPI")]
 [assembly: System.Reflection.AssemblyTitleAttribute("AseguradosAPI")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -1,12 +1,14 @@
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace AseguradosAPI.Models
 {
 
-    // Creación de la clase Asegurado para el modelo de datos Asegurados con los atributos requeridos
+    // Creación de la clase Asegurado para el modelo de datos Asegurados con los atributos requeridos según el problema
     public class Asegurado
     {
         [Key] 
+        [DatabaseGenerated(DatabaseGeneratedOption.None)] // se especifica que no se generará una clave primaria automáticamente
         public int NumeroIdentificacion { get; set; }
 
         [Required(ErrorMessage = "El primer nombre es obligatorio.")]

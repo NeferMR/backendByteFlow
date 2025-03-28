@@ -15,8 +15,7 @@ namespace AseguradosAPI.Migrations
                 name: "Asegurados",
                 columns: table => new
                 {
-                    NumeroIdentificacion = table.Column<int>(type: "int", nullable: false)
-                        .Annotation("SqlServer:Identity", "1, 1"),
+                    NumeroIdentificacion = table.Column<int>(type: "int", nullable: false),
                     PrimerNombre = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     SegundoNombre = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     PrimerApellido = table.Column<string>(type: "nvarchar(max)", nullable: false),

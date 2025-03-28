@@ -25,10 +25,7 @@ namespace AseguradosAPI.Migrations
             modelBuilder.Entity("AseguradosAPI.Models.Asegurado", b =>
                 {
                     b.Property<int>("NumeroIdentificacion")
-                        .ValueGeneratedOnAdd()
                         .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("NumeroIdentificacion"));
 
                     b.Property<string>("Email")
                         .IsRequired()

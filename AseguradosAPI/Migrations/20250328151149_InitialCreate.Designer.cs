@@ -12,7 +12,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace AseguradosAPI.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20250328024858_InitialCreate")]
+    [Migration("20250328151149_InitialCreate")]
     partial class InitialCreate
     {
         /// <inheritdoc />
@@ -28,10 +28,7 @@ namespace AseguradosAPI.Migrations
             modelBuilder.Entity("AseguradosAPI.Models.Asegurado", b =>
                 {
                     b.Property<int>("NumeroIdentificacion")
-                        .ValueGeneratedOnAdd()
                         .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("NumeroIdentificacion"));
 
                     b.Property<string>("Email")
                         .IsRequired()
