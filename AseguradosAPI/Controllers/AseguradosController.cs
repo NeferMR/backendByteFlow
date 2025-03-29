@@ -81,9 +81,28 @@ namespace AseguradosAPI.Controllers
         }
 
         // ================================================
-        // 3. OBTENER UN ASEGURADO POR ID (FILTRO POR NÚMERO DE IDENTIFICACIÓN)
+        // 3. BUSCAR ASEGURADOS
         // ================================================
-        
+
+        [HttpGet("search")]
+
+        // Método GET para buscar asegurados por identificación
+        public async Task<ActionResult<IEnumerable<Asegurado>>> SearchAsegurados([FromQuery] string query)
+        {
+            // Validación de parámetros
+            if (string.IsNullOrEmpty(query))
+                return await _context.Asegurados.ToListAsync();
+
+            // se devuelve la lista de asegurados que contienen el id que se le pasa por parámetro
+            return await _context.Asegurados
+                .Where(a => a.NumeroIdentificacion.ToString().Contains(query))
+                .ToListAsync();
+        }
+
+        // ================================================
+        // 4. OBTENER UN ASEGURADO POR ID (FILTRO POR NÚMERO DE IDENTIFICACIÓN)
+        // ================================================
+
         [HttpGet("{id}")]
         public async Task<ActionResult<Asegurado>> ObtenerAseguradoPorId(int id)
         {
@@ -100,7 +119,7 @@ namespace AseguradosAPI.Controllers
         }
 
         // ================================================
-        // 4. ACTUALIZAR UN ASEGURADO
+        // 5. ACTUALIZAR UN ASEGURADO
         // ================================================
         [HttpPut("{id}")]
         public async Task<IActionResult> ActualizarAsegurado(int id, Asegurado asegurado)
@@ -139,7 +158,7 @@ namespace AseguradosAPI.Controllers
         }
 
         // ================================================
-        // 5. ELIMINAR UN ASEGURADO
+        // 6. ELIMINAR UN ASEGURADO
         // ================================================
         [HttpDelete("{id}")]
         public async Task<IActionResult> EliminarAsegurado(int id)
